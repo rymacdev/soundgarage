@@ -8,7 +8,7 @@ function Home() {
     <div>
       <h1 className="text-3xl mb-6 pb-2">Home</h1>
 
-      <div className="my-6 rounded-xl bg-white p-6">
+      <div className="my-6 rounded-xl bg-white p-6 shadow-xl">
         <div>
           <h2 className="font-semibold mb-4">Spotlight</h2>
         </div>
@@ -43,7 +43,7 @@ function Home() {
 
         />
       </div>
-      <div className="my-6 rounded-xl bg-white p-6">
+      <div className="my-6 rounded-xl bg-white p-6 shadow-xl">
         <div>
           <h2 className="font-semibold mb-4">Featured Songs</h2>
         </div>

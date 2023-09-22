@@ -3,8 +3,7 @@ import Player from "./Player";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
-import playlistsdb from "../../songsdb/songs.json";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function Layout() {
 
@@ -89,30 +88,6 @@ function Layout() {
     }
   ]);
 
-  const [currentPlaylistIndex, setCurrentPlaylistIndex] = useState(0);
-  const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  useEffect(() => {
-    setCurrentPlaylistIndex(() => {
-      if (currentPlaylistIndex + 1 > playlistsdb.playlists.length - 1) {
-        return 0;
-      } else {
-        return currentPlaylistIndex + 1;
-      }
-    })
-  }, []);
-
-  useEffect(() => {
-    setCurrentSongIndex(() => {
-      if (currentSongIndex + 1 > playlistsdb.playlists[currentPlaylistIndex].songs.length - 1) {
-        return 0;
-      } else {
-        return currentSongIndex + 1;
-      }
-    })
-  }, []);
-
   return (
     <div className="flex flex-row bg-slate-100 h-screen w-screen overflow-hidden box-border">
       <Sidebar />
@@ -120,6 +95,7 @@ function Layout() {
         <Header />
         <div className="w-full overflow-y-auto">
           <div className="px-6 py-12 md:pt-16 md:pb-32 md:p-12 container mx-auto">
+            <div>{songs[0].album}</div>
             <Outlet />
           </div>
         </div>

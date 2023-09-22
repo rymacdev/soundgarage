@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Playlist() {
   return (
-    <div className="my-6 rounded-xl bg-white p-6">
+    <div className="my-6 rounded-xl bg-white p-6 shadow-xl">
       <div>
         <h2 className="font-semibold mb-4">Recommended</h2>
       </div>
