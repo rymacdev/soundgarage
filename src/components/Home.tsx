@@ -6,7 +6,7 @@ function Home() {
 
   return (
     <div>
-      <h1 className="text-3xl mb-6 pb-2">Home</h1>
+      <h1 className="text-4xl mb-1">Home</h1>
 
       <div className="my-6 rounded-xl bg-white p-6 shadow-xl">
         <div>

@@ -2,9 +2,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCompactDisc, faUser, faHome, faMusic, faCog } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
-function Sidebar() {
+function Sidebar(props: any) {
+
   return (
-    <div className="flex flex-col w-20 sm:w-80 bg-slate-900 text-white p-3 sm:p-6 ">
+    <div ref={props.sidebarRef} className="md:flex flex-col w-20 justify-items-between sm:w-80 bg-slate-900 text-white p-3 sm:p-6 hidden ">
       <div className="flex-1">
         <div className="mt-6 mb-12 ml-4 text-xl font-bold hidden sm:block">SoundGarage Music Library</div>
         <div className="flex flex-col gap-2">

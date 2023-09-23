@@ -3,7 +3,7 @@
 function Settings() {
     return (
       <div>
-        <h1 className="text-3xl">Settings</h1>
+        <h1 className="text-3xl h-screen">Settings</h1>
       </div>
     )
   }

@@ -14,9 +14,9 @@ function Playlist() {
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
             <div className="flex flex-col flex-1 justify-between lg:flex-row gap-0 lg:gap-8">
               <p className="flex flex-row items-center gap-3">Title of the song</p>
-              <p className="text-sm text-slate-600 lg:text-base">Yordaddy</p>
-              <p className="text-sm text-slate-600 lg:text-base">Libreng Experimento</p>
-              <p className="text-sm text-slate-600 lg:text-base">3:43</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Yordaddy</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Libreng Experimento</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">3:43</p>
             </div>
           </div>
           <div className="flex flex-row justify-end gap-4 lg:w-40">
@@ -30,9 +30,9 @@ function Playlist() {
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
             <div className="flex flex-col flex-1 justify-between lg:flex-row gap-0 lg:gap-8">
               <p className="flex flex-row items-center gap-3">Title of the song</p>
-              <p className="text-sm text-slate-600 lg:text-base">Yordaddy</p>
-              <p className="text-sm text-slate-600 lg:text-base">Libreng Experimento</p>
-              <p className="text-sm text-slate-600 lg:text-base">3:43</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Yordaddy</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Libreng Experimento</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">3:43</p>
             </div>
           </div>
           <div className="flex flex-row justify-end gap-4 lg:w-40">
@@ -46,9 +46,9 @@ function Playlist() {
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
             <div className="flex flex-col flex-1 justify-between lg:flex-row gap-0 lg:gap-8">
               <p className="flex flex-row items-center gap-3">Title of the song</p>
-              <p className="text-sm text-slate-600 lg:text-base">Yordaddy</p>
-              <p className="text-sm text-slate-600 lg:text-base">Libreng Experimento</p>
-              <p className="text-sm text-slate-600 lg:text-base">3:43</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Yordaddy</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Libreng Experimento</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">3:43</p>
             </div>
           </div>
           <div className="flex flex-row justify-end gap-4 lg:w-40">
@@ -62,9 +62,9 @@ function Playlist() {
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
             <div className="flex flex-col flex-1 justify-between lg:flex-row gap-0 lg:gap-8">
               <p className="flex flex-row items-center gap-3">Title of the song</p>
-              <p className="text-sm text-slate-600 lg:text-base">Yordaddy</p>
-              <p className="text-sm text-slate-600 lg:text-base">Libreng Experimento</p>
-              <p className="text-sm text-slate-600 lg:text-base">3:43</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Yordaddy</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Libreng Experimento</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">3:43</p>
             </div>
           </div>
           <div className="flex flex-row justify-end gap-4 lg:w-40">
@@ -78,9 +78,9 @@ function Playlist() {
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
             <div className="flex flex-col flex-1 justify-between lg:flex-row gap-0 lg:gap-8">
               <p className="flex flex-row items-center gap-3">Title of the song</p>
-              <p className="text-sm text-slate-600 lg:text-base">Yordaddy</p>
-              <p className="text-sm text-slate-600 lg:text-base">Libreng Experimento</p>
-              <p className="text-sm text-slate-600 lg:text-base">3:43</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Yordaddy</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">Libreng Experimento</p>
+              <p className="text-sm text-slate-600 lg:text-base hidden md:block">3:43</p>
             </div>
           </div>
           <div className="flex flex-row justify-end gap-4 lg:w-40">
@@ -88,6 +88,10 @@ function Playlist() {
             <div><FontAwesomeIcon icon={faHeart} className="text-slate-400 hover:text-blue-400"/></div>
           </div>
         </div>
+        
+        
+        
+        
         
       </div>
     </div>

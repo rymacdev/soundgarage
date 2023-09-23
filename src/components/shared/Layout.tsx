@@ -3,7 +3,7 @@ import Player from "./Player";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 function Layout() {
 
@@ -88,14 +88,23 @@ function Layout() {
     }
   ]);
 
+  const [menuHidden, setMenuHidden] = useState(false);
+  const sidebarRef = useRef(null);
+
   return (
-    <div className="flex flex-row bg-slate-100 h-screen w-screen overflow-hidden box-border">
-      <Sidebar />
+    <div className="flex flex-row bg-slate-100 h-[calc(100dvh)] w-screen overflow-hidden box-border">
+      <Sidebar
+        sidebarRef={sidebarRef}
+      />
       <div className="flex flex-col w-full">
-        <Header />
+        <Header 
+          menuHidden={menuHidden}
+          setMenuHidden={setMenuHidden}
+          sidebarRef={sidebarRef}
+        />
         <div className="w-full overflow-y-auto">
-          <div className="px-6 py-12 md:pt-16 md:pb-32 md:p-12 container mx-auto">
-            <div>{songs[0].album}</div>
+          <div className="px-4 md:px-6 py-8 md:pt-16 md:pb-32 md:p-12 container mx-auto">
+            {/* <div>{songs[0].album}</div> */}
             <Outlet />
           </div>
         </div>
