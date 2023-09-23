@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Sidebar(props: any) {
 
   return (
-    <div ref={props.sidebarRef} className="md:flex flex-col w-20 justify-items-between sm:w-80 bg-slate-900 text-white p-3 sm:p-6 hidden ">
+    <div className="sm:flex flex-col w-20 sm:w-80 justify-items-between bg-slate-900 text-white p-3 sm:p-6 hidden" ref={props.sidebarRef}>
       <div className="flex-1">
         <div className="mt-6 mb-12 ml-4 text-xl font-bold hidden sm:block">SoundGarage Music Library</div>
         <div className="flex flex-col gap-2">
@@ -15,10 +15,8 @@ function Sidebar(props: any) {
             <div><Link to="/Genres" className="flex flex-row items-center gap-4 hover:bg-slate-700 p-4 rounded-lg"><FontAwesomeIcon icon={faMusic} /> <span className="hidden sm:block">Genres</span></Link></div>
         </div>
       </div>
-      <div>
-        <div className="flex flex-col gap-2">
-            <div><Link to="/Settings" className="flex flex-row items-center gap-4 hover:bg-slate-700 p-4 rounded-lg"><FontAwesomeIcon icon={faCog} /> <span className="hidden sm:block">Settings</span></Link></div>
-        </div>
+      <div className="flex flex-col gap-2">
+          <div><Link to="/Settings" className="flex flex-row items-center gap-4 hover:bg-slate-700 p-4 rounded-lg"><FontAwesomeIcon icon={faCog} /> <span className="hidden sm:block">Settings</span></Link></div>
       </div>
     </div>
   )
