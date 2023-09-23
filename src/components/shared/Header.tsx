@@ -8,7 +8,7 @@ function Header(props: any) {
     if (props.menuHidden) {
       props.sidebarRef.current.style.display = "none";
     } else  {
-      props.sidebarRef.current.style.display = "block";
+      props.sidebarRef.current.style.display = "flex";
     }
   }, [props.menuHidden]);
 

@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Sidebar(props: any) {
 
   return (
-    <div className="sm:flex flex-col w-20 sm:w-80 justify-items-between bg-slate-900 text-white p-3 sm:p-6 hidden" ref={props.sidebarRef}>
+    <div className="sm:flex flex-col w-20 sm:w-80 sm:content-between bg-slate-900 text-white p-3 sm:p-6 hidden" ref={props.sidebarRef}>
       <div className="flex-1">
         <div className="mt-6 mb-12 ml-4 text-xl font-bold hidden sm:block">SoundGarage Music Library</div>
         <div className="flex flex-col gap-2">
