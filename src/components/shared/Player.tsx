@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCirclePlay, faForward, faBackward, faCirclePause } from "@fortawesome/free-solid-svg-icons";
+import { faCirclePlay, faForwardStep, faBackwardStep, faCirclePause } from "@fortawesome/free-solid-svg-icons";
 import { useRef, useState, useEffect } from "react";
 
 function Player(props: any) {
@@ -25,17 +25,17 @@ function Player(props: any) {
       <div className="text-sm p-0">{props.songs[props.currentSongIndex].title} by {props.songs[props.currentSongIndex].artist}</div>
       <div className="flex flex-row justify-center items-center gap-4 w-40 text-slate-400">
         <button className="skip-btn hover:text-blue-600">
-          <FontAwesomeIcon icon={faBackward} />
+          <FontAwesomeIcon icon={faBackwardStep} />
         </button>
         <button onClick={() => setIsPlaying(!isPlaying)} className="play-btn hover:text-blue-600">
           <FontAwesomeIcon icon={isPlaying ? faCirclePause : faCirclePlay} className="text-2xl"/>
         </button>
         <button className="skip-btn hover:text-blue-600">
-          <FontAwesomeIcon icon={faForward} />
+          <FontAwesomeIcon icon={faForwardStep} />
         </button>
       </div>
       <div>
-        <p className="text-sm p-0 hidden sm:block">{props.songs[props.currentSongIndex].album}</p>
+        <p className="text-sm p-0 hidden sm:block">Current Playlist: {props.songs[props.currentSongIndex].album}</p>
       </div>
     </div>
   )

@@ -3,7 +3,7 @@ import Player from "./Player";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function Layout() {
 
@@ -14,77 +14,99 @@ function Layout() {
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/01-maglipay.mp3"
+      songfile: "./assets/songs/libreng-experimento/01-maglipay.mp3",
+      genre: "bisrock, rock",
+      tags: "recommended"
     },
     {
       title: "Sala Ba Diay",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/02-sala-ba-diay.mp3"
+      songfile: "./assets/songs/libreng-experimento/02-sala-ba-diay.mp3",
+      genre: "bisrock, rock",
+      tags: ""
     },
     {
       title: "Sinelas",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/03-sinelas.mp3"
+      songfile: "./assets/songs/libreng-experimento/03-sinelas.mp3",
+      genre: "bisrock, rock",
+      tags: ""
     },
     {
       title: "Naytlayp Ni Batman",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/04-naytlayp-ni-batman.mp3"
+      songfile: "./assets/songs/libreng-experimento/04-naytlayp-ni-batman.mp3",
+      genre: "bisrock, rock",
+      tags: "featured"
     },
     {
       title: "Kina Nihitan",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/06-kinanihitan.mp3"
+      songfile: "./assets/songs/libreng-experimento/06-kinanihitan.mp3",
+      genre: "bisrock, rock",
+      tags: "recommended"
     },
     {
       title: "Asa Na",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/07-asa-na.mp3"
+      songfile: "./assets/songs/libreng-experimento/07-asa-na.mp3",
+      genre: "bisrock, rock",
+      tags: "featured"
     },
     {
       title: "Laay Blues",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/08-laay-blues.mp3"
+      songfile: "./assets/songs/libreng-experimento/08-laay-blues.mp3",
+      genre: "bisrock, rock",
+      tags: "featured"
     },
     {
       title: "Karnero",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/09-karnero.mp3"
+      songfile: "./assets/songs/libreng-experimento/09-karnero.mp3",
+      genre: "bisrock, rock",
+      tags: "featured"
     },
     {
       title: "Nihit",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/10-nihit.mp3"
+      songfile: "./assets/songs/libreng-experimento/10-nihit.mp3",
+      genre: "bisrock, rock",
+      tags: "recommended"
     },
     {
       title: "Angelie",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/11-angelie.mp3"
+      songfile: "./assets/songs/libreng-experimento/11-angelie.mp3",
+      genre: "bisrock, rock",
+      tags: "featured"
     },
     {
       title: "Unsaon Na Lang",
       artist: "Yordaddy",
       album: "Libreng Experimento",
       artwork: "./assets/songs/libreng-experimento/yordaddy-artwork-01.jpg",
-      songfile: "./assets/songs/libreng-experimento/12-unsaon-na-lang.mp3"
+      songfile: "./assets/songs/libreng-experimento/12-unsaon-na-lang.mp3",
+      genre: "bisrock, rock",
+      tags: "recommended featured"
     }
   ]);
 
