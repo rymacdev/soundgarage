@@ -3,7 +3,7 @@ import Player from "./Player";
 import Sidebar from "./Sidebar";
 import Header from "./Header";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 
 function Layout() {
 
