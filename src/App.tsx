@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/shared/Layout";
 import Albums from "./components/Albums";
 import Artists from "./components/Artists";
@@ -9,9 +9,9 @@ import Settings from "./components/Settings";
 function App() {
 
   return (
-    <Router>
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="albums" element={<Albums />} />
           <Route path="artists" element={<Artists />} />
@@ -19,7 +19,8 @@ function App() {
           <Route path="settings" element={<Settings />} />
         </Route>
       </Routes>
-    </Router>
+    </BrowserRouter>
+
   )
 }
 
