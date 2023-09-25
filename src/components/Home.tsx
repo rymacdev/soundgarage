@@ -40,6 +40,7 @@ function Home() {
       </div>
       <div>
         <Playlist
+          
         />
       </div>
       <div className="my-6 rounded-xl bg-white p-6 shadow-xl">

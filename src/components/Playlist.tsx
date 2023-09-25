@@ -9,6 +9,8 @@ function Playlist() {
       </div>
       <div className="flex flex-col gap-2">
 
+        {}
+
         <div className="flex flex-row items-center justify-between py-4 px-4 rounded-xl gap-3 bg-slate-100 hover:border-blue-600 border border-slate-100 box-border">
           <div className="flex flex-row flex-1 items-center gap-3">
             <FontAwesomeIcon icon={faPlayCircle} className="text-blue-700 text-xl"/>
