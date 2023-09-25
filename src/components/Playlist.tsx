@@ -2,14 +2,13 @@ import { faPlayCircle, faPlusCircle, faHeart } from "@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 function Playlist() {
+
   return (
-    <div className="my-6 rounded-xl bg-white p-6 shadow-xl">
+    <div className="my-6 rounded-xl bg-white p-6">
       <div>
-        <h2 className="font-semibold mb-4">Recommended</h2>
+        <h2 className="font-semibold mb-4">Current Playlist</h2>
       </div>
       <div className="flex flex-col gap-2">
-
-        {}
 
         <div className="flex flex-row items-center justify-between py-4 px-4 rounded-xl gap-3 bg-slate-100 hover:border-blue-600 border border-slate-100 box-border">
           <div className="flex flex-row flex-1 items-center gap-3">

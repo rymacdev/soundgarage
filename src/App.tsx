@@ -5,6 +5,7 @@ import Artists from "./components/Artists";
 import Genres from "./components/Genres";
 import Home from "./components/Home";
 import Settings from "./components/Settings";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="artists" element={<Artists />} />
           <Route path="genres" element={<Genres />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="*" element={<ErrorPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
