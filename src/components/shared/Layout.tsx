@@ -127,8 +127,8 @@ function Layout() {
         />
         <div className="w-full overflow-y-auto">
           <div className="px-4 md:px-6 py-8 md:pt-16 md:pb-32 md:p-12 container mx-auto">
-            {/* <div>{songs[0].album}</div> */}
             <Outlet 
+              context={{test: "test"}}
             />
           </div>
         </div>
