@@ -7,7 +7,6 @@ function Home() {
   return (
     <div>
       <h1 className="text-4xl mb-1">Browse Songs</h1>
-    
       <div className="my-6">
         <div>
           <h2 className="font-semibold mb-4">Spotlight</h2>

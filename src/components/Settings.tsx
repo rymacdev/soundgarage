@@ -1,9 +1,13 @@
-
+import { useLoaderData } from "react-router-dom";
 
 function Settings() {
+
+    const data: any = useLoaderData();
+
     return (
-      <div>
-        <h1 className="text-3xl h-screen">Settings</h1>
+      <div className="h-screen">
+        <h1 className="text-3xl">Settings</h1>
+        <p>{data}</p>
       </div>
     )
   }
