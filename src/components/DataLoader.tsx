@@ -1,9 +1,7 @@
-
-
 async function DataLoader() {
 
   const res = await fetch("./test.json");
-  const jsongs = await res.json();
+  const jsongs: [] | null = await res.json();
   
   return jsongs;
 }

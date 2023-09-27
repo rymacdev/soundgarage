@@ -5,6 +5,18 @@ import Header from "./Header";
 
 import { useState, useRef } from "react";
 
+export type Song = {
+    title: string,
+    artist: string,
+    album: string,
+    artwork: string,
+    songfile: string,
+    genre: string,
+    tags: string
+};
+
+export type Songs = Song[];
+
 function Layout() {
 
   // list of songs
@@ -112,6 +124,7 @@ function Layout() {
 
   const [menuHidden, setMenuHidden] = useState(false);
   const [currentSongIndex] = useState(0);
+  // const [currentPlaylist, setCurrentPlaylist] = useState('recommended')
   const sidebarRef = useRef(null);
 
   return (
@@ -128,7 +141,7 @@ function Layout() {
         <div className="w-full overflow-y-auto">
           <div className="px-4 md:px-6 py-8 md:pt-16 md:pb-32 md:p-12 container mx-auto">
             <Outlet 
-              context={{test: "test"}}
+              context={songs}
             />
           </div>
         </div>
